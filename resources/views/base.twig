@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="fr">
+    
     <head>
+        {% block head %}
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+        {% block title %}
         <title>Maquette test | Licorn Publishing</title>
+        {% endblock %}
+        {% block style %}
+         <!-- Fonts -->
+         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        {% endblock %}
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
+        {% endblock %}
         
-       
-
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
     </head>
-    {% include "nav.twig" %}
+    <body>
+        {% block body %}
+        {% block nav %}
+            {% include "nav.twig" %}
+        {% endblock %}
+        <h1>Hello</h1>
+    {% endblock %}
+        
+    </body>
+    
+    
 
 
 </html>
