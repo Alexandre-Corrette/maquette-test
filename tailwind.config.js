@@ -1,6 +1,6 @@
 module.exports = {
   purge: [
-    './resources/**/*.blade.php',
+    './resources/**/*.twig',
     './resources/**/*.js',
     './resources/**/*.vue',
   ],
@@ -10,6 +10,7 @@ module.exports = {
   },
   variants: {
     extend: {},
+    display: ["group-hover"]
   },
   plugins: [],
 }

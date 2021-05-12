@@ -2,15 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.dropdown {
+  display: block;
+}
+
 @layer base {
     @font-face {
       font-family: Sen;
       font-weight: 600;
-      src: url(/fonts/Sen/Sen-Bold.ttf) format("ttf");
+      src: url(../fonts/Sen/Sen-Bold.ttf) format("ttf");
     }
     @font-face {
-      font-family: Proxima Nova;
+      font-family: Sen;
       font-weight: 300;
-      src: url(/fonts/Sen/Sen-Regular.ttf) format("ttf");
+      src: url(../fonts/Sen/Sen-Regular.ttf) format("ttf");
     }
   }

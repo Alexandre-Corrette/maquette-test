@@ -12,19 +12,44 @@
         <title>Maquette test | Licorn Publishing</title>
         {% endblock %}
         {% block style %}
-         <!-- Fonts -->
-         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+         
         {% endblock %}
 
         {% endblock %}
         
     </head>
     <body>
-        {% block body %}
+    {% block body %}
+        <div class="bg-blue-900 w-3/4 h-1/5">
+            
+        </div>
+        {% block header %}
+        <div class="flex flex-row">
+            <img src="icons/Logo Licorn.svg" alt="">
+        </div>
+        {% endblock %}
         {% block nav %}
             {% include "nav.twig" %}
         {% endblock %}
+
+        <section>
+        {% block content %}
+
+        {% endblock %}
+        </section>
+        
         <h1>Hello</h1>
+    {% endblock %}
+    {% block scriptjs %}
+    <script>
+        let buttonMenu = document.getElementById('buttonMenu');
+
+        let mobileMenu = document.getElementById('mobileMenu');
+
+        buttonMenu.addEventListener('click', function(){
+            mobileMenu.classList.toggle('dropdown');
+        });
+    </script>
     {% endblock %}
         
     </body>
