@@ -6,10 +6,20 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateRows:{
+        '8':'repeat(8,minmax(0, 3fr))',
+      }
+      
+    },
+    fontFamily: {
+      sans:['Sen', 'sans-serif']
+    },
+    
   },
   variants: {
-    extend: {},
+    extend: {
+    },
     display: ["group-hover"]
   },
   plugins: [],

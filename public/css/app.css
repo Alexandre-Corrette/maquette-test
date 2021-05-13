@@ -366,7 +366,7 @@ ul {
  */
 
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: Sen, sans-serif; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -552,19 +552,38 @@ video {
 }
 
 @font-face {
-  font-family: Sen;
+  font-family: Sen, sans-serif;
 
-  font-weight: 600;
+  font-weight: 700;
 
-  src: url(/fonts/Sen-Bold.ttf?32d9f85343e9b2a3f09336b0a5a5ba9b) format("ttf");
+  src: url("/fonts/Sen/Sen-Bold.ttf") format("ttf");
 }
 
 @font-face {
-  font-family: Sen;
+  font-family: Sen, sans-serif;
 
-  font-weight: 300;
+  font-weight: 400;
 
-  src: url(/fonts/Sen-Regular.ttf?86f4976e456286fbdc1970bfa5b2f732) format("ttf");
+  src: url("/fonts/Sen/Sen-Regular.ttf") format("ttf");
+}
+
+.dropdown {
+  display: block;
+}
+
+h1{
+  font-size: 5rem;
+  margin: 0.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  margin: 0.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+  margin: 0.5rem;
 }
 
 .container {
@@ -11326,15 +11345,7 @@ video {
 }
 
 .font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Sen, sans-serif;
 }
 
 .font-thin {
@@ -28028,6 +28039,10 @@ video {
   grid-template-rows: repeat(6, minmax(0, 1fr));
 }
 
+.grid-rows-8 {
+  grid-template-rows: repeat(8,minmax(0, 3fr));
+}
+
 .grid-rows-none {
   grid-template-rows: none;
 }
@@ -31929,10 +31944,6 @@ video {
 
 .backdrop-sepia {
   --tw-backdrop-sepia: sepia(100%);
-}
-
-.dropdown {
-  display: block;
 }
 
 @media (min-width: 640px) {
@@ -42527,15 +42538,7 @@ video {
   }
 
   .sm\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .sm\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .sm\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Sen, sans-serif;
   }
 
   .sm\:font-thin {
@@ -59216,6 +59219,10 @@ video {
     grid-template-rows: repeat(6, minmax(0, 1fr));
   }
 
+  .sm\:grid-rows-8 {
+    grid-template-rows: repeat(8,minmax(0, 3fr));
+  }
+
   .sm\:grid-rows-none {
     grid-template-rows: none;
   }
@@ -73554,15 +73561,7 @@ video {
   }
 
   .md\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .md\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .md\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Sen, sans-serif;
   }
 
   .md\:font-thin {
@@ -90243,6 +90242,10 @@ video {
     grid-template-rows: repeat(6, minmax(0, 1fr));
   }
 
+  .md\:grid-rows-8 {
+    grid-template-rows: repeat(8,minmax(0, 3fr));
+  }
+
   .md\:grid-rows-none {
     grid-template-rows: none;
   }
@@ -104581,15 +104584,7 @@ video {
   }
 
   .lg\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .lg\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .lg\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Sen, sans-serif;
   }
 
   .lg\:font-thin {
@@ -121270,6 +121265,10 @@ video {
     grid-template-rows: repeat(6, minmax(0, 1fr));
   }
 
+  .lg\:grid-rows-8 {
+    grid-template-rows: repeat(8,minmax(0, 3fr));
+  }
+
   .lg\:grid-rows-none {
     grid-template-rows: none;
   }
@@ -135608,15 +135607,7 @@ video {
   }
 
   .xl\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .xl\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .xl\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Sen, sans-serif;
   }
 
   .xl\:font-thin {
@@ -152297,6 +152288,10 @@ video {
     grid-template-rows: repeat(6, minmax(0, 1fr));
   }
 
+  .xl\:grid-rows-8 {
+    grid-template-rows: repeat(8,minmax(0, 3fr));
+  }
+
   .xl\:grid-rows-none {
     grid-template-rows: none;
   }
@@ -166635,15 +166630,7 @@ video {
   }
 
   .\32xl\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .\32xl\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .\32xl\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Sen, sans-serif;
   }
 
   .\32xl\:font-thin {
@@ -183324,6 +183311,10 @@ video {
     grid-template-rows: repeat(6, minmax(0, 1fr));
   }
 
+  .\32xl\:grid-rows-8 {
+    grid-template-rows: repeat(8,minmax(0, 3fr));
+  }
+
   .\32xl\:grid-rows-none {
     grid-template-rows: none;
   }
@@ -187069,3 +187060,5 @@ video {
     --tw-backdrop-sepia: sepia(100%);
   }
 }
+  
+

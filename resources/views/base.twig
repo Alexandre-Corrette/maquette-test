@@ -5,51 +5,64 @@
         {% block head %}
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Styles -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
         {% block title %}
         <title>Maquette test | Licorn Publishing</title>
         {% endblock %}
-        {% block style %}
-         
+        {% block stylesheet %}
+         <!-- Styles -->
+        <link href="css/app.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;800&display=swap" rel="stylesheet">  
         {% endblock %}
 
         {% endblock %}
         
     </head>
-    <body>
+    <body class="bg-gray-100">
     {% block body %}
-        <div class="bg-blue-900 w-3/4 h-1/5">
+        <div class="grid grid-cols-6 auto-rows-auto ">
+            {% block header %}
+            <div class="col-start-1 col-span-4 p-4 bg-blue-900">
+                <img src="icons/Logo Licorn.svg" alt="">
+            </div>
+            <div></div>
+            <div class="col-end-7 bg-blue-600 p-4 row-start-1 row-end-2 ">
+                <img src="icons/Icon_search.svg" alt="">
+            </div>
             
+            <div class="col-start-1 col-span-4 row-start-2 p-4 col-span-4 bg-blue-900 ">
+                <div class="text-white pb-4 flex flex-col">
+                    <h1 class="font-bold  text-3xl">Lorem ipsum dolor sit amet </h1>
+                    <p class="mt-3 text-sm">Eos quis fuga qui accusamus aperiam non earum repudiandae</p>
+                </div>
+                <button class="bg-blue-600 w-30 text-white text-sm p-2 ml-4 mb-2">Lorem Ipsum</button>
+                <div class="ml-4 text-white text-sm mb-2">
+                    <a  href="#">Prev</a>
+                    <a  class="ml-2" href="#">Next</a>
+                </div>
+            </div>
+            <div class="row-start-3 col-start-1 col-span-2 text-xs text-gray-400 flex flex-col items-center mt-2">
+                <div><p>FOLLOW US</p>
+                </div>
+                <div class="flex flex-row mt-1 justify-between">
+                    <img class='m-1' src="icons/Icon_FB.svg" alt="">
+                    <img class='m-1' src="icons/Twitter.svg" alt="">
+                    <img class='m-1' src="icons/Icon_Insta.svg" alt="">
+                </div>
+            </div>
+            <div class='row-start-3 col-start-3 col-span-4'>
+                <img src="img/Photo_header.png" alt="">
+            </div>
+            {% endblock %}   
         </div>
-        {% block header %}
-        <div class="flex flex-row">
-            <img src="icons/Logo Licorn.svg" alt="">
-        </div>
-        {% endblock %}
-        {% block nav %}
-            {% include "nav.twig" %}
-        {% endblock %}
-
-        <section>
         {% block content %}
-
+           
         {% endblock %}
-        </section>
+
+        {% block nav %}
+        {% include "nav.twig" %}
+        {% endblock %}
         
-        <h1>Hello</h1>
-    {% endblock %}
-    {% block scriptjs %}
-    <script>
-        let buttonMenu = document.getElementById('buttonMenu');
-
-        let mobileMenu = document.getElementById('mobileMenu');
-
-        buttonMenu.addEventListener('click', function(){
-            mobileMenu.classList.toggle('dropdown');
-        });
-    </script>
+        
     {% endblock %}
         
     </body>
