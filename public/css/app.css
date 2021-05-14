@@ -586,6 +586,10 @@ h3 {
   margin: 0.5rem;
 }
 
+.blue {
+  background-color:#162D8C;
+}
+
 .container {
   width: 100%;
 }
