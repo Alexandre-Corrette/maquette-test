@@ -1,28 +1,28 @@
 {% extends "base.twig" %}
 
     {% block content %}
-        <section class="mt-5">
-            <div >
+        <section class="mt-5 grid grid-col-1 md:grid-col-4 md:mt-32 md:mt-10 lg:w-2/3 lg:m-auto">
+            <div class="md:col-start-1 md:col-span-2 md:row-start-1 md:row-span-2">
                 <div class="grid grid-col-6">
                     <div class="col-start-1 col-span-1 row-start-1">
                         <img src="icons/Carré_point2.svg" alt="">
                     </div>
-                    <div class=" ml-10 mt-8 mr-20 col-start-1 col-span-2 row-start-1">
+                    <div class=" ml-10 mt-8 mr-20 col-start-1 col-span-1 row-start-1">
                         <h2 class="text-2xl">Lorem ipsum dolor sit amet</h2>
                     </div>
                 </div>
                 
                 <div>
-                    <div class="grid grid-col-6 grid-row-3 p-4">
-                        <div class="col-start-1 col-end-7 row-start-1 row-end-4 ">
+                    <div class="grid grid-col-6 grid-row-4 p-4 ">
+                        <div class="col-start-1 col-end-7 row-start-1 row-span-4 ">
                             <img  src="img/Image_article1.png" alt="">
                         </div>
-                        <div class="p-4 col-end-2 row-end-2 bg-blue-600 w-3/4">
+                        <div class="p-4 col-start-1 col-span-2 row-start-1 row-span-1 bg-blue-600">
                             <img src="icons/Icon7.svg" alt="">
                         </div>
                         
-                        <div class="row-start-2 col-start-3 col-span-1 text-white text-sm flex flex-col items-center">
-                            <svg class="fill-current text-blue-600 w-1/2 h-1/2 transform rotate-180" width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <div class="row-start-2 row-span-1 col-start-1 col-span-6 flex justify-center">
+                            <svg class="fill-current text-blue-600 transform  rotate-180 " width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
                                 <title>Btn_fleche</title>
                                 <desc>Created with Sketch.</desc>
@@ -37,8 +37,12 @@
                                     </g>
                                 </g>
                             </svg>
-                            <h2 class="pl-1 pr-1 mt-2 text-xs">LOREM IPSUM</h2>
-                        </div>    
+                            
+                        </div>
+                        <div class=" row-start-3 col-start-1 col-span-6 flex justify-center">
+                            <h2 class=" text-white text-xs mx-auto">LOREM IPSUM</h2> 
+                        </div>
+                         
                     </div>
                     <div class="ml-4">
                         <h3 class="text-base">Lorem ipsum</h3>
@@ -47,16 +51,16 @@
 
                 </div>
                 <div>
-                    <div class="grid grid-col-6 grid-row-3 p-4">
-                        <div class="col-start-1 col-end-7 row-start-1 row-end-4 ">
+                    <div class="grid grid-col-6 grid-row-4 p-4">
+                        <div class="col-start-1 col-end-7 row-start-1 row-span-4 ">
                             <img  src="img/Image_article2.png" alt="">
                         </div>
-                        <div class="p-4 col-end-2 row-end-2 bg-blue-600 w-3/4">
+                        <div class="p-4 col-start-1 col-span-2 row-start-1 row-span-1 bg-blue-600">
                             <img src="icons/Icon 8.svg" alt="">
                         </div>
                         
-                        <div class="row-start-2 col-start-3 col-span-1 text-white text-sm flex flex-col items-center">
-                            <svg class="fill-current text-blue-600 w-1/2 h-1/2 transform rotate-180" width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <div class="row-start-2 row-span-1 col-start-1 col-span-6 flex justify-center">
+                            <svg class="fill-current text-blue-600 transform  rotate-180 " width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
                                 <title>Btn_fleche</title>
                                 <desc>Created with Sketch.</desc>
@@ -71,8 +75,11 @@
                                     </g>
                                 </g>
                             </svg>
-                            <h2 class="mt-2 text-xs">LOREM IPSUM</h2>
-                        </div>    
+                         
+                        </div>  
+                        <div class=" row-start-3 col-start-1 col-span-6 flex justify-center">
+                            <h2 class=" text-white text-xs mx-auto">LOREM IPSUM</h2> 
+                        </div>  
                     </div>
                     <div class="ml-4">
                         <h3 class="text-base">Lorem ipsum</h3>
@@ -82,8 +89,8 @@
                 </div>
                 
             </div>
-            <div>
-                <div>
+            <div class="grid grid-col-1 md:grid-col-2 md:col-start-3 md:col-span-2 md:row-start-1 md:mt-10">
+                <div class="md:row-start-1 md:row-span-2 md:col-start-1 md:col-span-1 ">
                     <div class="bg-white flex flex-col items-start m-4">
                         <div class="flex flex-row justify-start">
                             <div class="flex bg-red-500 items-center justify-center">
@@ -144,7 +151,7 @@
                     </div>
     
                 </div>
-                <div>
+                <div class="md:col-start-2 md:col-span-1 md:row-start-1 md:row-span-2 md:mt-10">
                     <div class="bg-white flex flex-col items-start m-4">
                         <div class="flex flex-row justify-start">
                             <div class="flex bg-blue-600 items-center justify-center">
@@ -208,40 +215,43 @@
                 </div>
             </div>
         </section>
-        <section class="bg-gray-300 pt-20 pb-32">
-            <div class="flex flex-col md:flex-row mt-20">
-                <div class="ml-4 mr-4">
+        <section class="bg-gray-200 pt-20 pb-32 mt-20">
+            <div class="flex flex-col md:flex-row mt-20 lg:w-2/3 lg:m-auto">
+                <div class="ml-4 mr-4 md:w-1/2 md:h-1/2 md:mr-0">
                     <img src="img/Image_contact.png" alt="">
                 </div>
-                <div class="bg-white flex flex-col justify-center ml-4 mr-4 pb-5">
-                    <h2 class="m-auto text-3xl mt-10">Lorem Ipsum</h2>
-                    <p class="m-auto text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam dicta velit,</p>
-                    <div class="mt-3">
-                        <div class="flex flex-col ml-4">
-                            <div class="flex flex-col">
-                                <label for="name">First name</label>
-                                <input class="pl-2 bg-gray-50  w-3/4" type="text" name="name" placeholder="Jane"> 
+                <div class="bg-white flex flex-col justify-center ml-4 mr-4 pb-32 md:w-1/2  md:ml-0 md:mt-16 ">
+                    <h2 class="m-auto text-3xl mt-10 font-semibold " style="font-size: 45px; line-height: 45px;">Lorem Ipsum</h2>
+                    <p class="w-2/3 m-auto text-center mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam dicta velit,</p>
+                    <div class="mt-5 ">
+                        <div class="flex flex-col w-2/3 m-auto text-gray-400 ">
+                            <div class="flex flex-col lg:flex-row lg:w-full mb-3">
+                                <div class="flex flex-col">
+                                    <label for="name">First name</label>
+                                    <input class="pl-2 bg-gray-100 " type="text" name="name" placeholder="Jane"> 
+                                </div>
+                                <div class="flex flex-col lg:ml-3">
+                                    <label for="">Last name</label>
+                                    <input class="pl-2 bg-gray-100 "type="text" placeholder="Smith">
+                                </div>
                             </div>
-                            <div class="flex flex-col">
-                                <label for="">Last name</label>
-                                <input class="pl-2 bg-gray-50 w-3/4"type="text" placeholder="Smith">
-                            </div>
-                            <div class="flex flex-col">
+                            <div class="flex flex-col mb-3">
                                 <label for="name">Email address</label>
-                                <input class="pl-2 bg-gray-50  w-3/4" type="email" name="name" placeholder="Janesmith@example.com"> 
+                                <input class="pl-2 bg-gray-100  " type="email" name="name" placeholder="Janesmith@example.com"> 
                             </div>
-                            <div class="flex flex-col">
+                            <div class="flex flex-col mb-3">
                                 <label for="">Message</label>
-                                <textarea class="pl-2 bg-gray-50 text-gray-400 w-3/4"name="" id="" cols="30" rows="5">Hey...
+                                <textarea class="pl-2 bg-gray-100 text-gray-400 "name="" id="" cols="30" rows="5">Hey...
                                 </textarea>
                             </div>
                             
                         </div>
-                        <div class="flex flex-row bg-black w-1/3 ml-4 mt-3 items-center p-3">
-                            <img class="transform -rotate-90 w-1/8 h-1/8" src="icons/Icon_fleche.svg " alt="">
-                            <p class="ml-6 text-white text-sm">LOREM IPSUM</p>
-                        </div>
+                       
     
+                    </div>
+                    <div class="flex flex-row justify-center bg-black w-1/3 m-auto p-4 mb-3 mt-5">
+                        <img class="transform -rotate-90 w-1/8 h-1/8" src="icons/Icon_fleche.svg " alt="">
+                        <p class="ml-6 text-white text-sm">LOREM IPSUM</p>
                     </div>
 
                 </div>
